@@ -4,9 +4,10 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/Footer";
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import Separator from "./components/separator/Separator";
 import useOnScreen from "./hooks/useOneScreen";
+import Menu from "./components/Menu/Menu";
 
 function App() {
 
@@ -35,37 +36,45 @@ function App() {
     }, [SeparatorOnScreen]);
 
 
-  return (
-      <LocomotiveScrollProvider
-          options={
-              {
-                  smooth: true,
-                  lerp : 0.09,
-                  mobile : {
-                      breakpoint : 0,
-                      smooth: true,
-                  },
-                  tablet : {
-                      breakpoint : 0,
-                      smooth: true,
-                  }
-              }
-          }
-          watch={[]}
-          containerRef={containerRef}
-      >
-          <main data-scroll-container="0" ref={containerRef}>
-              <div style={style} data-scroll-section="1">
-                  <Navbar/>
-                  <Header/>
-              </div>
-              <div data-scroll-section="1">
-                  <Separator ref={SeparatorRef}/>
-              </div>
-          </main>
-          <Footer ref={FooterRef} up={SeparatorOnScreen}/>
-      </LocomotiveScrollProvider>
+    const [menuActive, setMenuActive] = useState(false);
 
+    const clickHandler = ()=>{
+        setMenuActive(!menuActive);
+    }
+
+    return (
+    <>
+        <Menu show={menuActive} clickHandler={clickHandler}/>
+        <LocomotiveScrollProvider
+            options={
+                {
+                    smooth: true,
+                    lerp : 0.09,
+                    mobile : {
+                        breakpoint : 0,
+                        smooth: true,
+                    },
+                    tablet : {
+                        breakpoint : 0,
+                        smooth: true,
+                    }
+                }
+            }
+            watch={[]}
+            containerRef={containerRef}
+        >
+            <main data-scroll-container="0" ref={containerRef}>
+                <div style={style} data-scroll-section="1">
+                    <Navbar clickHandler={clickHandler}/>
+                    <Header/>
+                </div>
+                <div data-scroll-section="1">
+                    <Separator ref={SeparatorRef}/>
+                </div>
+            </main>
+            <Footer ref={FooterRef} up={SeparatorOnScreen}/>
+        </LocomotiveScrollProvider>
+    </>
   )
 }
 

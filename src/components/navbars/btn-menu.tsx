@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './btn-menu.module.scss'
 
-function BtnMenu() {
+function BtnMenu({name} : {name : string}) {
     return (
         <div className={style.btn}>
-            Menu
+            {name}
         </div>
     );
 }
