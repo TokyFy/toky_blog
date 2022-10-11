@@ -3,14 +3,25 @@
   bottom: 0;
   width: 100%;
   z-index: -1;
+  font-size: 18px;
+
+  @media screen and (max-width: 470px) {
+  font-size: 14px;
+}
 
   div {
     display: flex;
     ul {
       display: flex;
-      padding: 64px 0 ;
+      padding: 48px 0 ;
       li {
+        cursor: pointer;
         margin-right: 42px;
+        opacity: .8;
+        &:hover {
+          opacity: 1;
+        }
+
         &:last-child {
           margin-right: 0;
         }
@@ -20,5 +31,19 @@
     .menuRight {
       margin-left: auto;
     }
+
+    @media screen and (max-width: 762px) {
+      flex-direction: column;
+
+      ul {
+        padding: 24px 0 ;
+      }
+
+      .menuRight {
+        margin-left: unset;
+        padding-top: 0;
+      }
+    }
+
   }
 }
