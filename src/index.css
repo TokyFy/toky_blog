@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Reckless;
+  font-weight: normal;
+  src: url("/public/Font/Reckless-Regular.otf");
+}
+
+@font-face {
+  font-family: Terminademi;
+  font-weight: normal;
+  src: url("/public/Font/Termina-Demi.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  font-family: Terminademi , sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*#root {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*}*/
+
+body {
+  /*overflow-x: hidden;*/
+  background-size: cover;
+  background: linear-gradient(46.74deg, #CCE5FE -36.12%, #FFF0EA 83.84%) center;
+  color: #313C49;
+}
