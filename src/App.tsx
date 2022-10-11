@@ -4,8 +4,9 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/Footer";
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 import Separator from "./components/separator/Separator";
+import useOnScreen from "./hooks/useOneScreen";
 
 function App() {
 
@@ -15,19 +16,42 @@ function App() {
     }
 
     const containerRef = useRef(null)
+    const FooterRef = useRef(null)
+    const SeparatorRef = useRef(null)
+
+    const SeparatorOnScreen = useOnScreen(SeparatorRef);
+
+    useEffect(() => {
+        document.fonts.onloadingdone = () => {
+            const loader = document.getElementById("loadingScreen")!;
+            if (loader) {
+                loader.remove();
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        console.log(SeparatorRef)
+    }, [SeparatorOnScreen]);
+
+
   return (
       <LocomotiveScrollProvider
           options={
               {
                   smooth: true,
                   lerp : 0.09,
+                  mobile : {
+                      breakpoint : 0,
+                      smooth: true,
+                  },
+                  tablet : {
+                      breakpoint : 0,
+                      smooth: true,
+                  }
               }
           }
-
-          watch={
-              [
-              ]
-          }
+          watch={[]}
           containerRef={containerRef}
       >
           <main data-scroll-container="0" ref={containerRef}>
@@ -36,11 +60,10 @@ function App() {
                   <Header/>
               </div>
               <div data-scroll-section="1">
-                  <Separator/>
+                  <Separator ref={SeparatorRef}/>
               </div>
-
           </main>
-          <Footer/>
+          <Footer ref={FooterRef} up={SeparatorOnScreen}/>
       </LocomotiveScrollProvider>
 
   )

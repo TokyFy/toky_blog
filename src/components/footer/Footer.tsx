@@ -1,10 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import React, {forwardRef} from 'react';
 import style from './Footer.module.scss'
 import Row from "../layouts/layout";
 
 
-const Footer: FunctionComponent = (props) => {
-    return (<footer className={style.footer}>
+
+const Footer =  forwardRef<HTMLDivElement , {up:boolean}>(({up} , ref) => {
+    return (<footer style={{zIndex : `${up ? `999` : '-1'}`}} className={style.footer} ref={ref}>
        <Row>
            <ul>
                <li>About</li>
@@ -20,6 +21,6 @@ const Footer: FunctionComponent = (props) => {
            </ul>
        </Row>
     </footer>);
-};
+});
 
 export default Footer;
