@@ -15,9 +15,9 @@ const Footer =  forwardRef<HTMLDivElement , {up:boolean}>(({up} , ref) => {
            </ul>
 
            <ul className={style.menuRight}>
-               <li>LinkedIn</li>
-               <li>Github</li>
-               <li>Mail</li>
+               <li><a  href={'https://www.linkedin.com/in/tokyfy/'} target={'_blank'} rel={'noreferrer'}>LinkedIn </a></li>
+               <li><a  href={'https://github.com/TokyFy'} target={'_blank'} rel={'noreferrer'}>Github</a> </li>
+               <li><a  href={'mailto:tokyfydev@gmail.com'} target={'_blank'} rel={'noreferrer'}>Mail</a> </li>
            </ul>
        </Row>
     </footer>);
