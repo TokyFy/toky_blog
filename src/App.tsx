@@ -17,8 +17,10 @@ function App() {
     }
 
     const containerRef = useRef(null)
-    const FooterRef = useRef(null)
-    const SeparatorRef = useRef(null)
+    const FooterRef= useRef<HTMLDivElement> (null)
+    const SeparatorRef = useRef<HTMLDivElement>(null)
+
+    let SeparatorHeight = 0;
 
     const SeparatorOnScreen = useOnScreen(SeparatorRef);
 
@@ -29,11 +31,13 @@ function App() {
                 loader.remove();
             }
         };
-    }, []);
 
-    useEffect(() => {
-        console.log(SeparatorRef)
-    }, [SeparatorOnScreen]);
+        if(FooterRef.current && SeparatorRef.current) {
+            SeparatorHeight = FooterRef.current.offsetHeight
+            SeparatorRef.current.style.height = `${SeparatorHeight * 2}px`
+            console.log(SeparatorHeight)
+        }
+    }, []);
 
 
     const [menuActive, setMenuActive] = useState(false);
