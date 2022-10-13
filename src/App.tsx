@@ -9,6 +9,9 @@ import Separator from "./components/separator/Separator";
 import useOnScreen from "./hooks/useOneScreen";
 import Menu from "./components/Menu/Menu";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Tools from "./components/Tools/Tools";
+
 function App() {
   const style = {
     backgroundSize: "cover",
@@ -47,7 +50,6 @@ function App() {
 
   return (
     <>
-      <Menu show={menuActive} clickHandler={clickHandler} />
       <LocomotiveScrollProvider
         options={{
           smooth: true,
@@ -64,16 +66,22 @@ function App() {
         watch={[]}
         containerRef={containerRef}
       >
-        <main data-scroll-container="0" ref={containerRef}>
-          <div style={style} data-scroll-section="1">
-            <Navbar clickHandler={clickHandler} />
-            <Header />
-          </div>
-          <div data-scroll-section="1">
-            <Separator ref={SeparatorRef} />
-          </div>
-        </main>
-        <Footer ref={FooterRef} up={SeparatorOnScreen} />
+        <Router>
+          <Menu show={menuActive} clickHandler={clickHandler} />
+          <main data-scroll-container="0" ref={containerRef}>
+            <div style={style} data-scroll-section="1">
+              <Navbar clickHandler={clickHandler} />
+              <Routes>
+                <Route path={"/"} element={<Header />} />
+                <Route path={"/tools"} element={<Tools />} />
+              </Routes>
+            </div>
+            <div data-scroll-section="1">
+              <Separator ref={SeparatorRef} />
+            </div>
+          </main>
+          <Footer ref={FooterRef} up={SeparatorOnScreen} />
+        </Router>
       </LocomotiveScrollProvider>
     </>
   );
