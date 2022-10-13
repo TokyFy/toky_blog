@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
   return (
     <footer
-      style={{ zIndex: `${up ? `999` : "-1"}` }}
+      style={{ opacity: `${up ? `1` : "0"}`, zIndex: `${up ? `999` : "-1"}` }}
       className={style.footer}
       ref={ref}
     >

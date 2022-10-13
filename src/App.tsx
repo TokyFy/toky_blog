@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Navbar from "./components/navbars/navbar";
 import Header from "./components/header/header";
 import Footer from "./components/footer/Footer";
@@ -13,12 +13,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Tools from "./components/Tools/Tools";
 
 function App() {
-  const style = {
-    backgroundSize: "cover",
-    background:
-      "linear-gradient(46.74deg, #CCE5FE -36.12%, #FFF0EA 83.84%) center",
-  };
-
   const containerRef = useRef(null);
   const FooterRef = useRef<HTMLDivElement>(null);
   const SeparatorRef = useRef<HTMLDivElement>(null);
@@ -69,7 +63,7 @@ function App() {
         <Router>
           <Menu show={menuActive} clickHandler={clickHandler} />
           <main data-scroll-container="0" ref={containerRef}>
-            <div style={style} data-scroll-section="1">
+            <div className={"contentWrapper"} data-scroll-section="1">
               <Navbar clickHandler={clickHandler} />
               <Routes>
                 <Route path={"/"} element={<Header />} />
