@@ -13,7 +13,9 @@ const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
       <Row>
         <ul>
           <li>About</li>
-          <li>Project</li>
+          <li>
+            <Link to={"project"}>Project</Link>
+          </li>
           <li>
             <Link to={"tools"}>Tools</Link>
           </li>

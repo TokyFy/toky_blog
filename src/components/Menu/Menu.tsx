@@ -23,7 +23,9 @@ const Menu = ({
       <Row>
         <ul className={style.navMenu}>
           <li>About</li>
-          <li>Project</li>
+          <li>
+            <Link to={"project"}>Project</Link>
+          </li>
           <li>
             <Link to={"tools"}>Tools</Link>
           </li>

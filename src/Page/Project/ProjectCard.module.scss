@@ -1,0 +1,25 @@
+.ProjectCards {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+
+  .projectImage {
+    background-color: rgba(190,145,246,0.33);
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
+    .inner {
+      margin-top: 2.5%;
+      width: 95%;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

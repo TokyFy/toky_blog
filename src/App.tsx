@@ -1,6 +1,6 @@
 import "./App.scss";
 import Navbar from "./components/navbars/navbar";
-import Header from "./components/header/header";
+import Header from "./Page/Home/header";
 import Footer from "./components/footer/Footer";
 
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
@@ -10,7 +10,8 @@ import useOnScreen from "./hooks/useOneScreen";
 import Menu from "./components/Menu/Menu";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Tools from "./components/Tools/Tools";
+import Tools from "./Page/Tools/Tools";
+import Project from "./Page/Project/Project";
 
 function App() {
   const containerRef = useRef(null);
@@ -32,7 +33,6 @@ function App() {
     if (FooterRef.current && SeparatorRef.current) {
       SeparatorHeight = FooterRef.current.offsetHeight;
       SeparatorRef.current.style.height = `${SeparatorHeight * 2}px`;
-      console.log(SeparatorHeight);
     }
   }, []);
 
@@ -68,6 +68,7 @@ function App() {
               <Routes>
                 <Route path={"/"} element={<Header />} />
                 <Route path={"/tools"} element={<Tools />} />
+                <Route path={"/project"} element={<Project />} />
               </Routes>
             </div>
             <div data-scroll-section="1">

@@ -1,6 +1,6 @@
 import style from "./navbar.module.scss";
 import Row from "../layouts/layout";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/toolsLogo/logo.svg";
 import BtnMenu from "./btn-menu";
 import { Link } from "react-router-dom";
 
