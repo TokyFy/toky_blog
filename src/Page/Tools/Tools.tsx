@@ -1,5 +1,5 @@
 import React from "react";
-import Row from "../layouts/layout";
+import Row from "../../components/layouts/layout";
 
 import style from "./Tools.module.scss";
 import ToolsCard from "./ToolsCard";
@@ -8,6 +8,7 @@ import {
   AsepriteLogo,
   BlenderLogo,
   FigmaLogo,
+  GitLogo,
   GraphqlLogo,
   JavascriptLogo,
   MongodbLogo,
@@ -21,6 +22,8 @@ import {
   ThreejsLogo,
   TypescriptLogo,
   WebstormLogo,
+  TailwindCssLogo,
+  GsapLogo,
 } from "../../assets";
 
 const Tools = () => {
@@ -51,6 +54,11 @@ const Tools = () => {
             description={
               "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. "
             }
+          />
+          <ToolsCard
+            image={TailwindCssLogo}
+            title={"Tailwindcss"}
+            description={"A css in Js library"}
           />
           <ToolsCard
             image={JavascriptLogo}
@@ -109,8 +117,8 @@ const Tools = () => {
           />
 
           <ToolsCard
-            image={GraphqlLogo}
-            title={"GraphQl"}
+            image={GsapLogo}
+            title={"Gsap"}
             description={
               "GraphQL is an open-source data query and manipulation language for APIs"
             }
@@ -134,6 +142,12 @@ const Tools = () => {
             image={WebstormLogo}
             title={"Webstorm"}
             description={"An amazing Ide for web development"}
+          />
+
+          <ToolsCard
+            image={GitLogo}
+            title={"Git"}
+            description={"The most popular versioning tools"}
           />
 
           <ToolsCard

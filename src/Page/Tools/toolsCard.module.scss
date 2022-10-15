@@ -14,7 +14,7 @@
 .toolImageWrapper {
 
   img {
-    height: 80px;
+    height: 64px;
     width: auto;
   }
 
@@ -29,12 +29,12 @@
 
 .description {
 
-  padding: 32px;
   background: white;
   flex-grow: 1;
+  padding: 8px 16px 8px 8px;
 
   h3 {
-    font-size: 16px;
+    font-size: 13px;
     margin: 8px 0;
   }
 
@@ -44,5 +44,6 @@
     font-family: Reckless, serif;
     line-height: 24px;
     letter-spacing: 1px;
+    display: none;
   }
 }
