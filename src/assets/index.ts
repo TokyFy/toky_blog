@@ -15,6 +15,9 @@ import FigmaLogo from "./FigmaLogo.svg";
 import BlenderLogo from "./BlenderLogo.svg";
 import AsepriteLogo from "./AsepriteLogo.png";
 import ThreejsLogo from "./ThreejsLogo.svg";
+import GitLogo from "./GitLogo.svg";
+import GsapLogo from "./GsapLogo.svg";
+import TailwindCssLogo from "./TailwindCssLogo.svg";
 
 export {
   ReactLogo,
@@ -34,4 +37,7 @@ export {
   AsepriteLogo,
   BlenderLogo,
   ThreejsLogo,
+  GitLogo,
+  GsapLogo,
+  TailwindCssLogo,
 };
