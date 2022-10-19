@@ -60,7 +60,7 @@ const Menu = ({
               rel={"noreferrer"}
             >
               Mail
-            </a>{" "}
+            </a>
           </li>
         </ul>
       </Row>

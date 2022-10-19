@@ -18,8 +18,11 @@ import ThreejsLogo from "./toolsLogo/ThreejsLogo.svg";
 import GitLogo from "./toolsLogo/GitLogo.svg";
 import GsapLogo from "./toolsLogo/GsapLogo.svg";
 import TailwindCssLogo from "./toolsLogo/TailwindCssLogo.svg";
+import Arrow from "./Arrow.svg";
 
 import MozikaApp from "./mozika_app.png";
+import TokyblogApp from "./tokyblog_app.png";
+
 export {
   ReactLogo,
   SassLogo,
@@ -42,4 +45,6 @@ export {
   GsapLogo,
   TailwindCssLogo,
   MozikaApp,
+  Arrow,
+  TokyblogApp,
 };
