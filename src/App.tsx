@@ -35,7 +35,9 @@ function App() {
 
     if (FooterRef.current && SeparatorRef.current) {
       SeparatorHeight = FooterRef.current.offsetHeight;
-      SeparatorRef.current.style.height = `${SeparatorHeight * 2}px`;
+      SeparatorHeight += 70; // IDK but locomotive keep hiding the of approx 70px of the last element
+      console.log(SeparatorHeight);
+      SeparatorRef.current.style.height = `${SeparatorHeight}px`;
     }
   }, []);
 
