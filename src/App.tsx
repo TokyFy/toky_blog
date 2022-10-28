@@ -9,7 +9,8 @@ import Separator from "./components/separator/Separator";
 import useOnScreen from "./hooks/useOneScreen";
 import Menu from "./components/Menu/Menu";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+
 import Tools from "./Page/Tools/Tools";
 import Project from "./Page/Project/Project";
 
@@ -17,6 +18,8 @@ function App() {
   const containerRef = useRef(null);
   const FooterRef = useRef<HTMLDivElement>(null);
   const SeparatorRef = useRef<HTMLDivElement>(null);
+
+  let location = useLocation();
 
   let SeparatorHeight = 0;
 
@@ -57,26 +60,24 @@ function App() {
             smooth: true,
           },
         }}
-        watch={[]}
+        watch={[location]}
         containerRef={containerRef}
       >
-        <Router>
-          <Menu show={menuActive} clickHandler={clickHandler} />
-          <main data-scroll-container="0" ref={containerRef}>
-            <div className={"contentWrapper"} data-scroll-section="1">
-              <Navbar clickHandler={clickHandler} />
-              <Routes>
-                <Route path={"/"} element={<Header />} />
-                <Route path={"/tools"} element={<Tools />} />
-                <Route path={"/project"} element={<Project />} />
-              </Routes>
-            </div>
-            <div data-scroll-section="1">
-              <Separator ref={SeparatorRef} />
-            </div>
-          </main>
-          <Footer ref={FooterRef} up={SeparatorOnScreen} />
-        </Router>
+        <Menu show={menuActive} clickHandler={clickHandler} />
+        <main data-scroll-container="0" ref={containerRef}>
+          <div className={"contentWrapper"} data-scroll-section="1">
+            <Navbar clickHandler={clickHandler} />
+            <Routes>
+              <Route path={""} element={<Header />} />
+              <Route path={"tools"} element={<Tools />} />
+              <Route path={"project"} element={<Project />} />
+            </Routes>
+          </div>
+          <div data-scroll-section="1">
+            <Separator ref={SeparatorRef} />
+          </div>
+        </main>
+        <Footer ref={FooterRef} up={SeparatorOnScreen} />
       </LocomotiveScrollProvider>
     </>
   );
