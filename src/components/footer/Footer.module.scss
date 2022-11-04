@@ -1,51 +1,23 @@
-.footer {
-  transition: all .5s ease;
+footer {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  z-index: -1;
-  font-size: 18px;
+  padding: 69px 0;
+  transition: all .5s;
+  background-color: rgba(255, 104, 104, 0.14);
 
-  @media screen and (max-width: 470px) {
-  font-size: 14px;
-    padding-bottom: 16px;
-}
-
-  div {
+  .footerMenu {
+    width: 100%;
     display: flex;
-    ul {
-      display: flex;
-      padding: 42px 0 ;
-      li {
-        cursor: pointer;
-        margin-right: 42px;
-        opacity: .8;
-        &:hover {
-          opacity: 1;
-        }
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    min-height: 64px;
 
-        &:last-child {
-          margin-right: 0;
-        }
-      }
+    @media screen and (max-width: 575px) {
+      width: 80%;
+      margin: 0 auto;
     }
-
-    .menuRight {
-      margin-left: auto;
-    }
-
-    @media screen and (max-width: 762px) {
-      flex-direction: column;
-
-      ul {
-        padding: 24px 0 ;
-      }
-
-      .menuRight {
-        margin-left: unset;
-        padding-top: 0;
-      }
-    }
-
   }
 }
