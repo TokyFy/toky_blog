@@ -31,7 +31,6 @@
       }
 
       #loadingScreen .logo {
-        opacity: .5;
         width: 42px;
         height: max-content;
         animation: softScale 2s alternate infinite ease-in-out;
@@ -52,10 +51,24 @@
   <body>
   <div id="loadingScreen">
     <div class="logo">
-      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="64" y="64" width="64" height="64" transform="rotate(180 64 64)" fill="#313c49"/>
-        <rect x="40.125" y="49.875" width="11.875" height="11.875" rx="5.9375" transform="rotate(-90 40.125 49.875)" fill="#fff"/>
+      <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_95_102)">
+          <g clip-path="url(#clip1_95_102)">
+            <path d="M-0.481445 69.0161L68.5352 69.0161L68.5352 -0.000488281L-0.481445 -0.000488281L-0.481445 69.0161Z" fill="#D7DDE7"/>
+            <path d="M46.0165 45.9259C44.6756 47.2668 44.6756 49.4408 46.0165 50.7816C47.3574 52.1225 49.5313 52.1225 50.8722 50.7816C52.213 49.4408 52.213 47.2668 50.8722 45.9259C49.5313 44.5851 47.3574 44.5851 46.0165 45.9259Z" fill="#3B4B5D"/>
+            <path d="M17.3148 17.6491C13.9932 20.9707 13.9932 26.356 17.3148 29.6776C20.6364 32.9992 26.0218 32.9992 29.3434 29.6776C32.665 26.356 32.665 20.9707 29.3434 17.6491C26.0218 14.3275 20.6364 14.3275 17.3148 17.6491Z" fill="#3B4B5D"/>
+          </g>
+        </g>
+        <defs>
+          <clipPath id="clip0_95_102">
+            <rect width="69.3779" height="69.3779" fill="white"/>
+          </clipPath>
+          <clipPath id="clip1_95_102">
+            <rect x="-0.482422" width="69.0166" height="69.0166" rx="10.7437" fill="white"/>
+          </clipPath>
+        </defs>
       </svg>
+
     </div>
   </div>
     <div id="root"></div>

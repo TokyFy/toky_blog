@@ -10,6 +10,11 @@
   src: url("/public/fonts/Termina-Demi.otf");
 }
 
+@font-face {
+  font-family: ArkibalMono;
+  src: url("/public/fonts/ArkibalMono-Regular.otf");
+}
+
 * {
   margin: 0;
   padding: 0;

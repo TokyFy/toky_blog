@@ -2,7 +2,18 @@ import React from "react";
 import style from "./Menu.module.scss";
 import Navbar from "../navbars/navbar";
 import Row from "../layouts/layout";
-import { Link } from "react-router-dom";
+import LinkBox from "../LinkBox/LinkBox";
+import {
+  About,
+  Blog,
+  GuestBook,
+  Link,
+  Music,
+  Picture,
+  Project,
+  Resource,
+  Tools,
+} from "../../assets";
 
 const Menu = ({
   show,
@@ -20,55 +31,18 @@ const Menu = ({
         <Navbar action={"Home"} />
       </div>
 
-      <Row>
-        <ul className={style.navMenu}>
-          <li>About</li>
-          <li>
-            <Link to={"project"}>Project</Link>
-          </li>
-          <li>
-            <Link to={"tools"}>Tools</Link>
-          </li>
-          <li>Blog</li>
-        </ul>
-      </Row>
-
-      <Row>
-        <ul className={style.menuRight}>
-          <li>
-            <a
-              href={"https://www.linkedin.com/in/tokyfy/"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              LinkedIn{" "}
-            </a>
-          </li>
-          <li>
-            <a
-              href={"https://github.com/TokyFy"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              Github
-            </a>{" "}
-          </li>
-          <li>
-            <a
-              href={"mailto:tokyfydev@gmail.com"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              Mail
-            </a>
-          </li>
-        </ul>
-      </Row>
-
-      <div className={style.circleWrapper}>
-        <div className={style.circleOne}></div>
-        <div className={style.circleTwo}></div>
-        <div className={style.circleThree}></div>
+      <div className={style.navMenu}>
+        <Row>
+          <LinkBox image={About} url={"/About"} />
+          <LinkBox image={Link} url={"/Link"} />
+          <LinkBox image={Project} url={"/Project"} />
+          <LinkBox image={Tools} url={"/Tools"} />
+          <LinkBox image={Resource} url={"/Resource"} />
+          <LinkBox image={Blog} url={"/Blog"} />
+          <LinkBox image={GuestBook} url={"/GuestBook"} />
+          <LinkBox image={Music} url={"/Music"} />
+          <LinkBox image={Picture} url={"/Picture"} />
+        </Row>
       </div>
     </div>
   );

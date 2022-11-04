@@ -6,7 +6,7 @@ export default function useOnScreen(ref: React.RefObject<HTMLDivElement>) {
   const observer = new IntersectionObserver(
     ([entry]) => setIntersecting(entry.isIntersecting),
     {
-      threshold: 0.3,
+      threshold: 0.6,
     }
   );
 

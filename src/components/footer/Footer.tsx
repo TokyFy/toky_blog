@@ -1,7 +1,18 @@
 import React, { forwardRef } from "react";
 import style from "./Footer.module.scss";
 import Row from "../layouts/layout";
-import { Link } from "react-router-dom";
+import LinkBox from "../LinkBox/LinkBox";
+import {
+  About,
+  Link,
+  Blog,
+  Music,
+  Tools,
+  Project,
+  Picture,
+  GuestBook,
+  Resource,
+} from "../../assets";
 
 const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
   return (
@@ -11,46 +22,17 @@ const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
       ref={ref}
     >
       <Row>
-        <ul>
-          <li>About</li>
-          <li>
-            <Link to={"project"}>Project</Link>
-          </li>
-          <li>
-            <Link to={"tools"}>Tools</Link>
-          </li>
-          <li>Blog</li>
-        </ul>
-
-        <ul className={style.menuRight}>
-          <li>
-            <a
-              href={"https://www.linkedin.com/in/tokyfy/"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              LinkedIn{" "}
-            </a>
-          </li>
-          <li>
-            <a
-              href={"https://github.com/TokyFy"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              Github
-            </a>{" "}
-          </li>
-          <li>
-            <a
-              href={"mailto:tokyfydev@gmail.com"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              Mail
-            </a>{" "}
-          </li>
-        </ul>
+        <div className={style.footerMenu}>
+          <LinkBox image={About} url={"/About"} />
+          <LinkBox image={Link} url={"/Link"} />
+          <LinkBox image={Project} url={"/Project"} />
+          <LinkBox image={Tools} url={"/Tools"} />
+          <LinkBox image={Resource} url={"/Resource"} />
+          <LinkBox image={Blog} url={"/Blog"} />
+          <LinkBox image={GuestBook} url={"/GuestBook"} />
+          <LinkBox image={Music} url={"/Music"} />
+          <LinkBox image={Picture} url={"/Picture"} />
+        </div>
       </Row>
     </footer>
   );

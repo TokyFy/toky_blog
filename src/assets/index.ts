@@ -23,6 +23,16 @@ import Arrow from "./Arrow.svg";
 import MozikaApp from "./mozika_app.png";
 import TokyblogApp from "./tokyblog_app.png";
 
+import About from "./Menu/About.svg";
+import Blog from "./Menu/Blog.svg";
+import GuestBook from "./Menu/Guestbook.svg";
+import Link from "./Menu/Link.svg";
+import Music from "./Menu/Music.svg";
+import Picture from "./Menu/Picture.svg";
+import Project from "./Menu/Project.svg";
+import Resource from "./Menu/Resource.svg";
+import Tools from "./Menu/Tools.svg";
+
 export {
   ReactLogo,
   SassLogo,
@@ -47,4 +57,13 @@ export {
   MozikaApp,
   Arrow,
   TokyblogApp,
+  Blog,
+  Link,
+  Tools,
+  Project,
+  Resource,
+  Music,
+  Picture,
+  GuestBook,
+  About,
 };

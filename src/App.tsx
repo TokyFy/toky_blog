@@ -13,6 +13,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import Tools from "./Page/Tools/Tools";
 import Project from "./Page/Project/Project";
+import useViewports from "./hooks/useViewports";
 
 function App() {
   const containerRef = useRef(null);
@@ -24,6 +25,24 @@ function App() {
   let SeparatorHeight = 0;
 
   const SeparatorOnScreen = useOnScreen(SeparatorRef);
+  const [vh, vw] = useViewports();
+
+  useEffect(() => {
+    if (FooterRef.current && SeparatorRef.current) {
+      console.log(
+        Number(
+          getComputedStyle(FooterRef.current).paddingBottom.replace("px", "")
+        )
+      );
+
+      SeparatorHeight = FooterRef.current.offsetHeight;
+      SeparatorHeight += Number(
+        getComputedStyle(FooterRef.current).paddingBottom.replace("px", "")
+      ); // IDK but locomotive keep hiding the of approx 70px of the last element
+      //console.log(SeparatorHeight);
+      SeparatorRef.current.style.height = `${SeparatorHeight}px`;
+    }
+  }, [vh, vw]);
 
   useEffect(() => {
     document.fonts.onloadingdone = () => {
@@ -32,13 +51,6 @@ function App() {
         loader.remove();
       }
     };
-
-    if (FooterRef.current && SeparatorRef.current) {
-      SeparatorHeight = FooterRef.current.offsetHeight;
-      SeparatorHeight += 70; // IDK but locomotive keep hiding the of approx 70px of the last element
-      console.log(SeparatorHeight);
-      SeparatorRef.current.style.height = `${SeparatorHeight}px`;
-    }
   }, []);
 
   const [menuActive, setMenuActive] = useState(false);
