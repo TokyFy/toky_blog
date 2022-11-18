@@ -1,19 +1,20 @@
 import "./App.scss";
-import Navbar from "./components/navbars/navbar";
-import Header from "./Page/Home/header";
-import Footer from "./components/footer/Footer";
+import Navbar from "../components/navbars/navbar";
+import Header from "../Page/Home/header";
+import Footer from "../components/footer/Footer";
 
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef, useState } from "react";
-import Separator from "./components/separator/Separator";
-import useOnScreen from "./hooks/useOneScreen";
-import Menu from "./components/Menu/Menu";
+import Separator from "../components/separator/Separator";
+import useOnScreen from "../hooks/useOneScreen";
+import Menu from "../components/Menu/Menu";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Tools from "./Page/Tools/Tools";
-import Project from "./Page/Project/Project";
-import useViewports from "./hooks/useViewports";
+import Tools from "../Page/Tools/Tools";
+import Project from "../Page/Project/Project";
+import useViewports from "../hooks/useViewports";
+import ComingSoon from "../components/ComingSoon/ComingSoon";
 
 function App() {
   const containerRef = useRef(null);
@@ -85,6 +86,7 @@ function App() {
               <Route path={""} element={<Header />} />
               <Route path={"tools"} element={<Tools />} />
               <Route path={"project"} element={<Project />} />
+              <Route path={"*"} element={<ComingSoon />} />
             </Routes>
           </div>
           <div data-scroll-section="1">
