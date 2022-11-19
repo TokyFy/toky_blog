@@ -15,6 +15,7 @@ import Tools from "../Page/Tools/Tools";
 import Project from "../Page/Project/Project";
 import useViewports from "../hooks/useViewports";
 import ComingSoon from "../components/ComingSoon/ComingSoon";
+import Link from "../Page/Link/Link";
 
 function App() {
   const containerRef = useRef(null);
@@ -30,17 +31,12 @@ function App() {
 
   useEffect(() => {
     if (FooterRef.current && SeparatorRef.current) {
-      console.log(
-        Number(
-          getComputedStyle(FooterRef.current).paddingBottom.replace("px", "")
-        )
-      );
-
       SeparatorHeight = FooterRef.current.offsetHeight;
-      SeparatorHeight += Number(
-        getComputedStyle(FooterRef.current).paddingBottom.replace("px", "")
-      ); // IDK but locomotive keep hiding the of approx 70px of the last element
-      //console.log(SeparatorHeight);
+
+      SeparatorHeight += vw >= 876 ? 69 : 69 / 2;
+
+      // IDK but locomotive keep hiding the of approx 69px (the footer padding) of the last element
+      // when the viewport width is >= 876px and 69/2 otherwise
       SeparatorRef.current.style.height = `${SeparatorHeight}px`;
     }
   }, [vh, vw]);
@@ -75,7 +71,14 @@ function App() {
             smooth: true,
           },
         }}
-        watch={[location]}
+        watch={[]}
+        location={location}
+        onLocationChange={(scroll: {
+          scrollTo: (
+            arg0: number,
+            arg1: { duration: number; disableLerp: boolean }
+          ) => any;
+        }) => scroll.scrollTo(0, { duration: 0, disableLerp: true })}
         containerRef={containerRef}
       >
         <Menu show={menuActive} clickHandler={clickHandler} />
@@ -86,6 +89,7 @@ function App() {
               <Route path={""} element={<Header />} />
               <Route path={"tools"} element={<Tools />} />
               <Route path={"project"} element={<Project />} />
+              <Route path={"link"} element={<Link />} />
               <Route path={"*"} element={<ComingSoon />} />
             </Routes>
           </div>
