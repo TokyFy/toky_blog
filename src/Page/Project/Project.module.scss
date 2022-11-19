@@ -1,18 +1,23 @@
+.projectList,
 .projectsHeader {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1140px;
-  h1{
+  max-width: 800px;
+}
+
+.projectsHeader {
+  h1 {
     padding-top: 96px;
-    padding-bottom: 16px;
-    font-size: 48px;
+    margin-bottom: 24px;
   }
   P {
     padding-bottom: 48px;
-    opacity: 0.9;
-    font-size: 18px;
-    font-family: Reckless, serif;
-    line-height: 24px;
-    letter-spacing: 1px;
   }
+}
+
+.projectList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }

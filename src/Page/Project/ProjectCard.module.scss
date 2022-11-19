@@ -5,7 +5,7 @@
   margin-bottom: 48px;
 
   .projectImage {
-    background-color: rgba(190,145,246,0.33);
+    background-color: rgba(190, 145, 246, 0.33);
     overflow: hidden;
     border-radius: 8px 8px 0 0;
     display: flex;
@@ -23,7 +23,7 @@
       }
     }
   }
-  
+
   .projectDescription {
     margin-top: 32px;
     max-width: 600px;
@@ -39,11 +39,8 @@
 
     p {
       padding-bottom: 22px;
-      opacity: 0.9;
-      font-size: 18px;
-      font-family: Reckless, serif;
+      font-size: 16px;
       line-height: 24px;
-      letter-spacing: 1px;
     }
 
     .btnProject {
@@ -56,6 +53,7 @@
       display: flex;
       align-items: center;
       transition: all 1s;
+      font-family: ArkibalMono, serif;
 
       @media screen and (max-width: 696px) {
         font-size: 14px;
@@ -73,7 +71,7 @@
         border: 2px solid rgba(49, 60, 73);
 
         img {
-          transform: translate(0 , 10%) rotate(45deg);
+          transform: translate(0, 10%) rotate(45deg);
         }
       }
     }
