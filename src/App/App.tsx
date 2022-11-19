@@ -33,10 +33,15 @@ function App() {
     if (FooterRef.current && SeparatorRef.current) {
       SeparatorHeight = FooterRef.current.offsetHeight;
 
-      SeparatorHeight += vw >= 876 ? 69 : 69 / 2;
+      const footerPadding = Number(
+        getComputedStyle(FooterRef.current).paddingBottom.replace("px", "")
+      );
+
+      SeparatorHeight += vw >= 876 ? footerPadding : footerPadding / 2;
 
       // IDK but locomotive keep hiding the of approx 69px (the footer padding) of the last element
       // when the viewport width is >= 876px and 69/2 otherwise
+
       SeparatorRef.current.style.height = `${SeparatorHeight}px`;
     }
   }, [vh, vw]);
