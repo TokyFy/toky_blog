@@ -15,19 +15,19 @@ function Header() {
             <ambientLight intensity={0.5} />
             <Suspense fallback={null}>
               <Model />
-              <OrbitControls enableZoom={false} />
+              <OrbitControls enableZoom={false} enablePan={false} />
             </Suspense>
             <Environment preset={"city"} blur={1} />
           </Canvas>
         </div>
         <h1 className={style.header}>
-          Hello , I'm a Toky a junior Javascript developer and occasional{" "}
-          <Span color={"#E63946"}>UI/UX</Span> designer passionate about making
-          the web accessible to everyone through a wide variety of{" "}
-          <Span color={"#f4acb7"}>Tool</Span> . I love{" "}
-          <Span color={"#fcbf49"}>sharing</Span> my knowledge with others, and I
-          do that through my little <Span color={"#06d6a0"}>Blog</Span>. I also
-          love Math and 3D Stuff.
+          Hello , I'm a Toky a junior Javascript developer and occasional
+          <Span color={"#E63946"}> UI/UX</Span> designer passionate about making
+          the web accessible to everyone through a wide variety of
+          <Span color={"#f4acb7"}> Tool</Span> . I love
+          <Span color={"#fcbf49"}> sharing</Span> my knowledge with others, and
+          I do that through my little <Span color={"#06d6a0"}> Blog</Span>. I
+          also love Math and 3D Stuff.
         </h1>
       </div>
     </Row>
