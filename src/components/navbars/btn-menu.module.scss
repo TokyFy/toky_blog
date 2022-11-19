@@ -2,14 +2,17 @@
   font-size: 18px;
   text-transform: uppercase;
   height: 48px;
-  background-color: #313C4930;
+  background-color: rgba(215, 221, 231, 0.65);
   text-align: center;
   display: flex;
   align-items: center;
   padding: 0 42px;
   border-radius: 35px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+  font-family: Terminademi, sans-serif;
+  font-weight: bold;
+  color: #313c49;
 
   &:hover {
     background-color: rgb(49, 60, 73);
@@ -27,5 +30,4 @@
     height: 32px;
     padding: 0 24px;
   }
-
 }
