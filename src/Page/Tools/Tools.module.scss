@@ -2,18 +2,14 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
- h1{
-   padding-top: 96px;
-   padding-bottom: 16px;
-   font-size: 48px;
- }
+  h1 {
+    padding-top: 96px;
+    padding-bottom: 16px;
+    font-size: 48px;
+  }
   P {
     padding-bottom: 48px;
-    opacity: 0.9;
     font-size: 18px;
-    font-family: Reckless, serif;
-    line-height: 24px;
-    letter-spacing: 1px;
   }
 }
 
@@ -23,7 +19,6 @@
   max-width: 1140px;
   h2 {
     font-size: 22px;
-    font-family: Reckless, serif;
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 32px;
@@ -31,22 +26,21 @@
     width: max-content;
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 95%;
       height: 2px;
       bottom: -5px;
-      background-color: #313C49;
-      opacity: .5;
+      background-color: #313c49;
+      opacity: 0.5;
     }
   }
-
 }
 
 .tools {
   display: grid;
-  grid-template-columns: repeat(4 , 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 22px;
   grid-auto-rows: 1fr;
   max-width: 1140px;
@@ -55,10 +49,10 @@
   padding-bottom: 96px;
 
   @media screen and (max-width: 960px) {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media screen and (max-width: 612px) {
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
