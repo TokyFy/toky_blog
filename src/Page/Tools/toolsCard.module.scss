@@ -20,9 +20,9 @@
 
 .toolImageWrapper {
   img {
-    height: 64px;
+    height: 42px;
     width: auto;
-    filter: grayscale(0.5);
+    //filter: grayscale(0.5);
   }
 
   display: flex;
@@ -34,16 +34,17 @@
 }
 
 .description {
-  background: rgba(59, 75, 93, 0.3);
+  background: rgba(59, 75, 93, 0.15);
   flex-grow: 1;
   padding: 8px;
-  margin: 8px;
+  margin: 4px;
   border-radius: 8px;
 
   h3 {
     font-family: ArkibalMono, sans-serif;
     font-size: 13px;
     margin: 8px 0;
+    color: #313c49;
   }
 
   p {

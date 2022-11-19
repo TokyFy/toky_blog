@@ -49,9 +49,11 @@ h1 {
   font-size: 48px;
 }
 
-h1,
+h1 {
+  color: #313c49;
+}
+
 h2,
 h3 {
-  font-family: Terminademi, sans-serif;
-  color: #313c49;
+  font-family: ArkibalMono, sans-serif;
 }
