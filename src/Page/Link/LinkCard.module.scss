@@ -1,0 +1,27 @@
+.LinkCard {
+  display: block;
+  width: 100%;
+  background-color: #e5e8ec;
+  padding: 16px;
+  border-radius: 12px;
+  color: #313c49;
+  transition: all 0.2s ease-in-out;
+  margin: 12px 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  span {
+    color: #596676;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #dde4eb;
+  }
+}
