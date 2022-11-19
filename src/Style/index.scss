@@ -31,17 +31,27 @@ a {
 }
 
 :root {
-  font-family: Terminademi , sans-serif;
+  font-family: Terminademi, sans-serif;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-size: cover;
+  background: linear-gradient(46.74deg, #cce5fe -36.12%, #fff0ea 83.84%) center;
+  color: #596676;
+  font-family: ArkibalMono, serif;
+  font-weight: lighter;
 }
 
-body {
-  background-size: cover;
-  background: linear-gradient(46.74deg, #CCE5FE -36.12%, #FFF0EA 83.84%) center;
-  color: #313C49;
+h1 {
+  font-size: 48px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Terminademi, sans-serif;
+  color: #313c49;
 }
