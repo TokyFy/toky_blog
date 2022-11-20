@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Menu.module.scss";
 import Navbar from "../navbars/navbar";
-import Row from "../layouts/layout";
+import { Row } from "../layouts/layout";
 import LinkBox from "../LinkBox/LinkBox";
 import {
   About,

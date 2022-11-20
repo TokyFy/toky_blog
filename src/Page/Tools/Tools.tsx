@@ -1,5 +1,5 @@
 import React from "react";
-import Row from "../../components/layouts/layout";
+import { Row, Section } from "../../components/layouts/layout";
 
 import style from "./Tools.module.scss";
 import ToolsCard from "./ToolsCard";
@@ -25,18 +25,18 @@ import {
   TailwindCssLogo,
   GsapLogo,
 } from "../../assets";
+import Header from "../../components/header/header";
 
 const Tools = () => {
   return (
-    <>
-      <Row>
-        <div className={style.toolsHeader}>
-          <h1>Tools</h1>
-          <p>
-            The products, apps and services I use on a daily basis for study and
-            coding.
-          </p>
-        </div>
+    <Row>
+      <Section>
+        <Header
+          header={"Tools"}
+          description={
+            "The products, apps and services I use on a daily basis for study and coding."
+          }
+        />
 
         <div className={style.toolsHeaderSecond}>
           <h2>Language and Framework :</h2>
@@ -182,8 +182,8 @@ const Tools = () => {
             }
           />
         </div>
-      </Row>
-    </>
+      </Section>
+    </Row>
   );
 };
 

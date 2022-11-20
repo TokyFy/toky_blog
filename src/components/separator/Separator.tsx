@@ -1,15 +1,12 @@
-import React, {forwardRef} from 'react';
+import React, { forwardRef } from "react";
 import style from "./Separator.module.scss";
-import Row from "../layouts/layout";
-
+import { Row } from "../layouts/layout";
 
 const Separator = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-     <Row>
-         <div className={style.separator} ref={ref}>
-
-         </div>
-     </Row>
+    <Row>
+      <div className={style.separator} ref={ref}></div>
+    </Row>
   );
 });
 

@@ -3,16 +3,19 @@
   margin-left: auto;
   max-width: 1140px;
   margin-bottom: 48px;
+  padding: 1.6rem;
+  border-radius: 6px;
+
+  @media screen and (max-width: 696px) {
+    padding: 1rem;
+  }
 
   .projectImage {
-    background-color: rgba(190, 145, 246, 0.33);
     overflow: hidden;
     border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: center;
     .inner {
-      margin-top: 2.5%;
-      width: 95%;
       border-radius: 4px 4px 0 0;
       overflow: hidden;
       display: flex;
@@ -25,22 +28,22 @@
   }
 
   .projectDescription {
-    margin-top: 32px;
+    margin-top: 1.6rem;
     max-width: 600px;
-    margin-left: 64px;
-
-    @media screen and (max-width: 696px) {
-      margin-left: 12px;
-    }
 
     h2 {
-      margin-bottom: 16px;
+      color: #313c49;
     }
 
     p {
-      padding-bottom: 22px;
+      margin: 1rem 0;
       font-size: 16px;
       line-height: 24px;
+
+      @media screen and (max-width: 590px) {
+        font-size: 14px;
+        line-height: 1.4em;
+      }
     }
 
     .btnProject {
@@ -63,6 +66,7 @@
         height: 1em;
         margin-left: 1.5em;
         transform: translateX(-12px);
+        opacity: 0.5;
         transition: all 1s;
       }
 
@@ -71,6 +75,7 @@
         border: 2px solid rgba(49, 60, 73);
 
         img {
+          opacity: 1;
           transform: translate(0, 10%) rotate(45deg);
         }
       }

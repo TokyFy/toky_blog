@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import style from "./Footer.module.scss";
-import Row from "../layouts/layout";
+import { Row } from "../layouts/layout";
 import LinkBox from "../LinkBox/LinkBox";
 import {
   About,

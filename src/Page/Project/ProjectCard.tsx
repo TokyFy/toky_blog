@@ -19,11 +19,11 @@ const ProjectCard: FunctionComponent<Props> = ({
   ambientColor,
 }) => {
   return (
-    <div className={style.ProjectCards}>
-      <div
-        style={{ backgroundColor: `${ambientColor}` }}
-        className={style.projectImage}
-      >
+    <div
+      style={{ backgroundColor: `${ambientColor}` }}
+      className={style.ProjectCards}
+    >
+      <div className={style.projectImage}>
         <div className={style.inner}>
           <img src={image} alt={title} />
         </div>
