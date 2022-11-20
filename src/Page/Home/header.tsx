@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import style from "./header.module.scss";
-import Row from "../../components/layouts/layout";
+import { Row } from "../../components/layouts/layout";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { Model } from "../../components/three/square";

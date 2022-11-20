@@ -1,0 +1,18 @@
+.header {
+  margin-bottom: 2.4rem;
+
+  h2 {
+    color: #313c49;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media screen and (max-width: 590px) {
+      font-size: 14px;
+      line-height: 1.4em;
+    }
+  }
+}
