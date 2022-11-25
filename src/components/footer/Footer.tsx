@@ -28,10 +28,10 @@ const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
           <LinkBox image={Project} url={"/Project"} />
           <LinkBox image={Tools} url={"/Tools"} />
           <LinkBox image={Resource} url={"/Resource"} />
-          <LinkBox image={Blog} url={"/Blog"} />
           <LinkBox image={GuestBook} url={"/GuestBook"} />
           <LinkBox image={Music} url={"/Music"} />
           <LinkBox image={Picture} url={"/Picture"} />
+          <LinkBox image={Blog} url={"/Blog"} />
         </div>
       </Row>
     </footer>

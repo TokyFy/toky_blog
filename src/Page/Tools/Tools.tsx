@@ -26,6 +26,7 @@ import {
   GsapLogo,
 } from "../../assets";
 import Header from "../../components/header/header";
+import HeaderSecond from "../../components/header/headerSecond";
 
 const Tools = () => {
   return (
@@ -38,9 +39,7 @@ const Tools = () => {
           }
         />
 
-        <div className={style.toolsHeaderSecond}>
-          <h2>Language and Framework :</h2>
-        </div>
+        <HeaderSecond>Language and Framework :</HeaderSecond>
 
         <div className={style.tools}>
           <ToolsCard
@@ -133,9 +132,7 @@ const Tools = () => {
           />
         </div>
 
-        <div className={style.toolsHeaderSecond}>
-          <h2>Software :</h2>
-        </div>
+        <HeaderSecond>Software :</HeaderSecond>
 
         <div className={style.tools}>
           <ToolsCard

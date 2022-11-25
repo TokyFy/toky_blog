@@ -1,0 +1,14 @@
+.websiteCollection {
+  margin-bottom: 42px;
+}
+
+.bookCollection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media screen and (max-width: 512px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

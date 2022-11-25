@@ -1,7 +1,7 @@
 .header {
   margin-bottom: 2.4rem;
 
-  h2 {
+  h1 {
     color: #313c49;
   }
 
@@ -9,8 +9,32 @@
     margin: 0.5rem 0;
     font-size: 16px;
     line-height: 24px;
+  }
 
-    @media screen and (max-width: 590px) {
+  @media screen and (max-width: 720px) {
+    h1 {
+      font-size: 2.7rem;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0.25rem 0;
+    }
+  }
+
+  @media screen and (max-width: 590px) {
+    p {
+      font-size: 14px;
+      line-height: 1.4em;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    p {
       font-size: 14px;
       line-height: 1.4em;
     }

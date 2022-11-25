@@ -33,6 +33,16 @@ import Project from "./Menu/Project.svg";
 import Resource from "./Menu/Resource.svg";
 import Tools from "./Menu/Tools.svg";
 
+import book1 from "./BookCovers/Book1.png";
+import book2 from "./BookCovers/Book2.png";
+import book3 from "./BookCovers/Book3.png";
+import book4 from "./BookCovers/Book4.png";
+import book5 from "./BookCovers/Book5.png";
+import book6 from "./BookCovers/Book6.png";
+import book7 from "./BookCovers/Book7.png";
+import book8 from "./BookCovers/Book8.png";
+import book9 from "./BookCovers/Book9.png";
+
 export {
   ReactLogo,
   SassLogo,
@@ -66,4 +76,13 @@ export {
   Picture,
   GuestBook,
   About,
+  book1,
+  book2,
+  book3,
+  book4,
+  book5,
+  book6,
+  book7,
+  book8,
+  book9,
 };

@@ -6,7 +6,7 @@
   aspect-ratio: 1;
   background: #3b4b5d2b;
   border-radius: 15%;
-  transition: all .5s;
+  transition: all 0.5s;
 
   @media screen and (max-width: 890px) {
     width: 42px;
@@ -15,6 +15,10 @@
   &:hover {
     transform: scale(1.15);
     background: rgba(59, 75, 93, 0.31);
+  }
+
+  svg {
+    fill: currentColor;
   }
 
   img {

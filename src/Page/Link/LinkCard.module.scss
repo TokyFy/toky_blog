@@ -1,5 +1,4 @@
 .LinkCard {
-  display: block;
   width: 100%;
   background-color: #e5e8ec;
   padding: 16px;
@@ -7,6 +6,23 @@
   color: #313c49;
   transition: all 0.2s ease-in-out;
   margin: 12px 0;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+
+  .linkIcon {
+    display: inline-block;
+    height: 1.3em;
+    width: auto;
+    margin-left: auto;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+    img {
+      height: 100%;
+      width: auto;
+      max-width: 32px;
+    }
+  }
 
   &:first-of-type {
     margin-top: 0;
@@ -23,5 +39,15 @@
   &:hover {
     transform: scale(1.01);
     background-color: #dde4eb;
+
+    .linkIcon {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 0.8rem;
+    padding: 12px;
+    border-radius: 10px;
   }
 }

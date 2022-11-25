@@ -1,0 +1,25 @@
+.headerSecond {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  position: relative;
+  color: #313c49;
+  background: rgba(59, 75, 93, 0.15);
+  padding: 10px 16px;
+  border-radius: 10px;
+  width: 100%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+  }
+  //&:after {
+  //  content: "";
+  //  display: block;
+  //  position: absolute;
+  //  width: 95%;
+  //  height: 1px;
+  //  bottom: -10px;
+  //  background-color: #313c49;
+  //  opacity: 0.5;
+  //}
+}

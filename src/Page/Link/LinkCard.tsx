@@ -5,9 +5,10 @@ interface props {
   platform: string;
   userName: string;
   link: string;
+  icons?: string;
 }
 
-const LinkCard: React.FC<props> = ({ platform, userName, link }) => {
+const LinkCard: React.FC<props> = ({ platform, userName, link, icons }) => {
   return (
     <a
       href={`${link}`}
@@ -16,6 +17,9 @@ const LinkCard: React.FC<props> = ({ platform, userName, link }) => {
       className={style.LinkCard}
     >
       {`${platform}`} // <span>{`@${userName}`}</span>
+      <div className={style.linkIcon}>
+        <img src={icons} alt={""} />
+      </div>
     </a>
   );
 };

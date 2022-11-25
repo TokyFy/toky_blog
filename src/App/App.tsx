@@ -16,6 +16,7 @@ import Project from "../Page/Project/Project";
 import useViewports from "../hooks/useViewports";
 import ComingSoon from "../components/ComingSoon/ComingSoon";
 import Link from "../Page/Link/Link";
+import Resource from "../Page/Resource/Resource";
 
 function App() {
   const containerRef = useRef(null);
@@ -95,6 +96,7 @@ function App() {
               <Route path={"tools"} element={<Tools />} />
               <Route path={"project"} element={<Project />} />
               <Route path={"link"} element={<Link />} />
+              <Route path={"resource"} element={<Resource />} />
               <Route path={"*"} element={<ComingSoon />} />
             </Routes>
           </div>
