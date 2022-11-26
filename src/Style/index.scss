@@ -1,10 +1,4 @@
 @font-face {
-  font-family: Reckless;
-  font-weight: normal;
-  src: url("/public/fonts/Reckless-Regular.otf");
-}
-
-@font-face {
   font-family: Terminademi;
   font-weight: normal;
   src: url("/public/fonts/Termina-Demi.otf");
@@ -12,7 +6,14 @@
 
 @font-face {
   font-family: ArkibalMono;
+  src: url("/public/fonts/ArkibalMono-Light.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ArkibalMono;
   src: url("/public/fonts/ArkibalMono-Regular.otf");
+  font-weight: normal;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
   background: linear-gradient(46.74deg, #cce5fe -36.12%, #fff0ea 83.84%) center;
   color: #596676;
   font-family: ArkibalMono, serif;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 h1 {
