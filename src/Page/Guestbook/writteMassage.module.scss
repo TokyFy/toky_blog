@@ -1,0 +1,21 @@
+.writeMessage {
+  background-color: #313c49;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+
+  .text {
+    margin-bottom: 1.4rem;
+
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    p {
+      font-weight: 400;
+      color: #cad4d7;
+      font-size: 0.9rem;
+    }
+  }
+}
