@@ -10,7 +10,11 @@ const Row: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
 const Section: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
   children,
 }) => {
-  return <section className={style.section}>{children}</section>;
+  return (
+    <Row>
+      <section className={style.section}>{children}</section>
+    </Row>
+  );
 };
 
 export { Row, Section };

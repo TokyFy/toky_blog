@@ -4,14 +4,14 @@ import { Row } from "../layouts/layout";
 import LinkBox from "../LinkBox/LinkBox";
 import {
   About,
-  Link,
   Blog,
-  Music,
-  Tools,
-  Project,
-  Picture,
   GuestBook,
+  Link,
+  Music,
+  Picture,
+  Project,
   Resource,
+  Tools,
 } from "../../assets";
 
 const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {

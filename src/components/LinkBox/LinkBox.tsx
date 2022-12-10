@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import style from "./LinkBox.module.scss";
 import { Link } from "react-router-dom";
+
 interface Props {
   image: string;
   url: string;

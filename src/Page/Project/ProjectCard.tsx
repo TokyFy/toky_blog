@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from "react";
 import style from "./ProjectCard.module.scss";
-
 import { Arrow } from "../../assets";
 
 interface Props {
