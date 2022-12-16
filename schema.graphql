@@ -1,0 +1,21 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Mutation {
+    setComments(author: String, comment: String): posts
+}
+
+type Query {
+    comments: [posts]
+}
+
+type posts {
+    author: String!
+    comment: String!
+    date: String
+    id: String
+}
