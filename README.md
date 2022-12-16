@@ -8,9 +8,7 @@ It's just my new Portfolio and my little blog 🔥
 
 
 ```shell
-
-yarn install ## to install all dependency
+yarn ## to install all dependency
 
 yarn dev ## For development
-
 ```
