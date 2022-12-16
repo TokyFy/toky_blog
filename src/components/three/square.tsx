@@ -34,7 +34,7 @@ export function Model(props: JSX.IntrinsicElements["group"]) {
         name="Circle"
         position={[0, 0, 0]}
         rotation={[0.4, 2.35, -1.55]}
-        scale={0.35}
+        scale={0.4}
       >
         <mesh
           name="Circle_1"

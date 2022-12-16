@@ -1,25 +1,33 @@
 .websiteLink {
   font-size: 1rem;
-  border-bottom: 2px solid rgba(59, 75, 93, 0.15);
-  padding: 16px 0;
-  width: 100%;
+  border: 2px solid rgba(59, 75, 93, 0.15);
   transition: all 0.5s ease-in-out;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 3px;
+
   @media screen and (max-width: 720px) {
     font-size: 0.9rem;
   }
 
-  &:first-of-type {
-    border-top: 2px solid rgba(59, 75, 93, 0.15);
+  .text {
+    display: none;
   }
 
+  //&:first-of-type {
+  //  border-top: 2px solid rgba(59, 75, 93, 0.15);
+  //}
+
   .icon {
-    display: inline-block;
+    display: flex;
     height: 100%;
-    margin-left: auto;
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
 
     img {
       height: 1.5em;
@@ -30,9 +38,10 @@
 
   &:hover {
     color: #313c49;
-    border-bottom: 2px solid #313c49;
+    border: 2px solid #313c49;
     .icon {
       opacity: 1;
     }
   }
+
 }

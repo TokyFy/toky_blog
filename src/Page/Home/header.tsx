@@ -21,10 +21,10 @@ function Header() {
                     </Canvas>
                 </div>
                 <h1 className={style.header}>
-                    Hi there, my name is Toky and I am a junior JavaScript developer and occasional UI/UX designer.
-                    I&nbsp;am passionate about making the web accessible to everyone through a range of tools and
-                    techniques. In&nbsp;addition to writing code, I&nbsp;enjoy sharing my knowledge with others through my blog and
-                    I have a particular interest in math and 3D modeling. Thank you for taking the time to read about me.
+                    Hi there, my name is <Span color={"#feb54d"}>Toky</Span> and I am a junior <Span color={"#db81ff"}>JavaScript</Span> developer and occasional <Span color={"#ef6493"}>UI/UX</Span> designer.
+                    I&nbsp;am passionate about making the <Span color={"#ed5350"}>web</Span> accessible to everyone through a range of tools and
+                    techniques. In&nbsp;addition to writing <Span color={"#2d803e"}>code</Span>, I&nbsp;enjoy sharing my knowledge with others through my <Span color={"#58a2f2"}>blog</Span> and
+                    I have a particular interest in math and <Span color={"#f05d26"}>3D modeling</Span>. Thank you for taking the time to read about me.
                 </h1>
             </div>
         </Row>

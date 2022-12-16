@@ -14,6 +14,12 @@
   .content {
     margin-bottom: 1rem;
     font-weight: lighter;
+
+    p {
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 
   .info {
@@ -27,6 +33,10 @@
       &:last-of-type {
         text-align: right;
       }
+    }
+
+    .date {
+      font-size: .8em;
     }
   }
 }

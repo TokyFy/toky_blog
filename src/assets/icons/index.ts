@@ -15,23 +15,27 @@ import frontendmentor from "./frontendmentor.svg";
 import github from "./github.svg";
 import instagram from "./instagram.svg";
 import reddit from "./reddit.svg";
+import sendIcon from "./Send.svg";
+import logoutIcon from "./logout.svg"
 
 export {
-  npm,
-  dezzer,
-  dribble,
-  frontendmentor,
-  github,
-  deezer,
-  devto,
-  medium,
-  quora,
-  spotify,
-  stackoverflow,
-  linkedIn,
-  facebook,
-  instagram,
-  csstricks,
-  awwwards,
-  reddit,
+    npm,
+    dezzer,
+    dribble,
+    frontendmentor,
+    github,
+    deezer,
+    devto,
+    medium,
+    quora,
+    spotify,
+    stackoverflow,
+    linkedIn,
+    facebook,
+    instagram,
+    csstricks,
+    awwwards,
+    reddit,
+    sendIcon,
+    logoutIcon
 };

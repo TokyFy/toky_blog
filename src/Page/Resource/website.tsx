@@ -14,7 +14,9 @@ const website: FunctionComponent<Props> = ({ url, icon }) => {
       href={`https://${url}`}
       className={style.websiteLink}
     >
-      {url}
+      <span className={style.text}>
+        {url}
+      </span>
 
       <span className={style.icon}>
         <img src={icon} alt={""} />
