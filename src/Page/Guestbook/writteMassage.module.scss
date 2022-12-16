@@ -1,9 +1,8 @@
 .writeMessage {
   background-color: #313c49;
   color: white;
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 0.4rem;
-
   .text {
     margin-bottom: 1.4rem;
 
@@ -17,5 +16,89 @@
       color: #cad4d7;
       font-size: 0.9rem;
     }
+  }
+
+  .messageForm {
+    form {
+      textarea {
+        padding: .5rem;
+        background-color: #313c49;
+        outline: none;
+        border: 2px solid #313c49;
+        border-radius: 4px;
+        width: 100%;
+        height: 8rem;
+        font-family: inherit;
+        color: #dde4eb;
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .btnWrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .logout,
+    .send {
+      background-color: #313c49;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      span {
+        display: inline-block;
+        height: 1em;
+        margin-left: 1em;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    .logout {
+      background-color: transparent;
+      border: 2px solid #313c49;
+      color: #313c49;
+      padding: 1rem 1.3rem;
+    }
+
+    .send {
+
+      .loading {
+        animation: softScale .5s alternate infinite;
+      }
+
+      flex-grow: 1;
+
+      img {
+        filter: brightness(0) invert(100%) sepia(5%) saturate(301%) hue-rotate(222deg) brightness(115%) contrast(100%);
+      }
+    }
+  }
+}
+
+@keyframes softScale {
+  0% {
+   transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(20px);
   }
 }
