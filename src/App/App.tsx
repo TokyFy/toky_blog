@@ -25,7 +25,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 const GRAPHQL_END_POINT = String(import.meta.env.VITE_GRAPHQL_END_POINT);
 
 const client = new ApolloClient({
-  uri: GRAPHQL_END_POINT,
+  uri: `${GRAPHQL_END_POINT}`,
   cache: new InMemoryCache()
 });
 
