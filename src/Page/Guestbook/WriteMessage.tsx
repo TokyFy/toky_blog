@@ -37,7 +37,7 @@ const WriteMessage:React.FC<props> = ({send}) => {
                             <div onClick={SendComments} className={style.send}>
                                 <p>Send</p> <span> <img className={`${loading ? style.loading : ''}`} src={sendIcon} alt={""}/> </span>
                             </div>
-                            <div className={style.logout}>
+                            <div onClick={()=>setAuth(false)} className={style.logout}>
                                 <p>Logout</p> <span> <img src={logoutIcon} alt={""}/> </span>
                             </div>
                         </div>
