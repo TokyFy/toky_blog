@@ -22,6 +22,7 @@ import {AuthContext} from '../context/authContext';
 import Redirect from '../components/redirect/Redirect';
 import {ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
 import {LOCAL_STORAGE_TOKEN_ID} from "../constants";
+import About from "../Page/About/About";
 
 const GRAPHQL_END_POINT = String(import.meta.env.VITE_GRAPHQL_END_POINT);
 
@@ -56,6 +57,7 @@ function App() {
             SeparatorRef.current.style.height = `${SeparatorHeight}px`;
         }
     }, [vh, vw]);
+
     useEffect(() => {
         document.fonts.onloadingdone = () => {
             const loader = document.getElementById('loadingScreen')!;
@@ -64,13 +66,14 @@ function App() {
             }
         };
     }, []);
-
+    21
     const [menuActive, setMenuActive] = useState(false);
     const menuTogglesHandlers = () => {
         setMenuActive(!menuActive);
     };
 
     const [auth, setAuth] = useState(false);
+
     const context = {
         auth, setAuth: (auth: boolean) => {
             if (!auth) localStorage.setItem(LOCAL_STORAGE_TOKEN_ID, ``);
@@ -108,6 +111,7 @@ function App() {
                             <ApolloProvider client={client}>
                                 <Routes>
                                     <Route path={''} element={<Header/>}/>
+                                    <Route path={'about'} element={<About/>}/>
                                     <Route path={'tools'} element={<Tools/>}/>
                                     <Route path={'project'} element={<Project/>}/>
                                     <Route path={'link'} element={<Link/>}/>

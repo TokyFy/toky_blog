@@ -1,18 +1,8 @@
-import React, { forwardRef } from "react";
+import React, {forwardRef} from "react";
 import style from "./Footer.module.scss";
-import { Row } from "../layouts/layout";
+import {Row} from "../layouts/layout";
 import LinkBox from "../LinkBox/LinkBox";
-import {
-  About,
-  Blog,
-  GuestBook,
-  Link,
-  Music,
-  Picture,
-  Project,
-  Resource,
-  Tools,
-} from "../../assets";
+import {About, GuestBook, Link, Project, Tools,} from "../../assets";
 
 const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
   return (
@@ -23,15 +13,15 @@ const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
     >
       <Row>
         <div className={style.footerMenu}>
-          <LinkBox image={About} url={"/About"} />
-          <LinkBox image={Link} url={"/Link"} />
-          <LinkBox image={Project} url={"/Project"} />
-          <LinkBox image={Tools} url={"/Tools"} />
-          <LinkBox image={Resource} url={"/Resource"} />
-          <LinkBox image={GuestBook} url={"/GuestBook"} />
-          <LinkBox image={Music} url={"/Music"} />
-          <LinkBox image={Picture} url={"/Picture"} />
-          <LinkBox image={Blog} url={"/Blog"} />
+          <LinkBox image={About} url={"/About"}/>
+          <LinkBox image={Link} url={"/Link"}/>
+          <LinkBox image={Project} url={"/Project"}/>
+          <LinkBox image={Tools} url={"/Tools"}/>
+          {/*<LinkBox image={Resource} url={"/Resource"} />*/}
+          <LinkBox image={GuestBook} url={"/GuestBook"}/>
+          {/*<LinkBox image={Music} url={"/Music"} />*/}
+          {/*<LinkBox image={Picture} url={"/Picture"} />*/}
+          {/*<LinkBox image={Blog} url={"/Blog"} />*/}
         </div>
       </Row>
     </footer>
