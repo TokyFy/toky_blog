@@ -1,34 +1,11 @@
 import React from "react";
-import { Section } from "../../components/layouts/layout";
+import {Section} from "../../components/layouts/layout";
 import Header from "../../components/header/header";
 import style from "./Resource.module.scss";
 import HeaderSecond from "../../components/header/headerSecond";
 import Website from "./website";
-import Book from "./Book";
 
-import {
-  book1,
-  book2,
-  book3,
-  book4,
-  book5,
-  book6,
-  book7,
-  book8,
-  book9,
-} from "../../assets";
-
-import {
-  awwwards,
-  csstricks,
-  devto,
-  dribble,
-  frontendmentor,
-  github,
-  medium,
-  reddit,
-  stackoverflow,
-} from "../../assets/icons";
+import {devto, frontendmentor, github, reddit, stackoverflow,} from "../../assets/icons";
 
 const Resource = () => {
   return (
@@ -48,25 +25,17 @@ const Resource = () => {
         <Website url={"www.github.com"} icon={github} />
         <Website url={"www.reddit.com"} icon={reddit} />
         <Website url={"www.dev.to"} icon={devto} />
-        <Website url={"www.dribble.com"} icon={dribble} />
-        <Website url={"www.awwwwards.com"} icon={awwwards} />
-        <Website url={"www.csstrick.com"} icon={csstricks} />
-        <Website url={"www.medium.com"} icon={medium} />
       </div>
 
       <HeaderSecond>Books collection :</HeaderSecond>
 
-      <div className={style.bookCollection}>
-        <Book image={book1} />
-        <Book image={book2} />
-        <Book image={book3} />
-        <Book image={book4} />
-        <Book image={book5} />
-        <Book image={book6} />
-        <Book image={book7} />
-        <Book image={book8} />
-        <Book image={book9} />
-      </div>
+        <div className={style.bookCollection}>
+            <Website url={"www.frontendmentor.com"} icon={frontendmentor}/>
+            <Website url={"www.stackoverflow.com"} icon={stackoverflow}/>
+            <Website url={"www.github.com"} icon={github}/>
+            <Website url={"www.reddit.com"} icon={reddit}/>
+            <Website url={"www.dev.to"} icon={devto}/>
+        </div>
     </Section>
   );
 };

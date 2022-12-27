@@ -4,7 +4,7 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  background-color: rgba(208, 208, 216, 0.5);
+  background-color: rgba(255, 255, 255, 0.63);
   transition: all 0.2s ease;
 
   &:hover {
@@ -33,7 +33,7 @@
 }
 
 .description {
-  background: rgba(59, 75, 93, 0.15);
+  background: #764adb1f;
   flex-grow: 1;
   padding: 8px;
   margin: 4px;
@@ -43,7 +43,7 @@
     font-family: ArkibalMono, sans-serif;
     font-size: 13px;
     margin: 8px 0;
-    color: #313c49;
+    color: #764adb;
   }
 
   p {
