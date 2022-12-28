@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Link.module.scss";
-import { Section } from "../../components/layouts/layout";
+import {Section} from "../../components/layouts/layout";
 import LinkCard from "./LinkCard";
 import Header from "../../components/header/header";
 
@@ -11,8 +11,8 @@ const Link = () => {
     <Section>
       <div className={style.Link}>
         <Header
-          header={"Link"}
-          description={"All the links to reach me on the web :"}
+            header={"Link"}
+            description={"Here are the links to find me on the web :"}
         />
         <div className={style.list}>
           {LinkData.map((link, index) => (

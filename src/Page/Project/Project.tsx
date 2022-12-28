@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from "react";
+import React, {FunctionComponent} from "react";
 import style from "./Project.module.scss";
 import ProjectCard from "./ProjectCard";
-import { Section } from "../../components/layouts/layout";
+import {Section} from "../../components/layouts/layout";
 import Header from "../../components/header/header";
 import projectData from "../Data/project";
 
@@ -12,7 +12,7 @@ const Project: FunctionComponent = () => {
         <Header
           header={"Project"}
           description={
-            "I like building project so Here is a small collection of my personal project and Experience."
+              "I enjoy building projects, and here is a selection of my personal projects and experiences :"
           }
         />
       </div>

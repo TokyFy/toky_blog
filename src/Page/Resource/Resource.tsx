@@ -11,7 +11,7 @@ const Resource = () => {
             <Header
                 header={"Resource"}
                 description={
-                    "All website , book and bootcamp course I wish i know earlier :"
+                    "Here is a list of websites, books, and bootcamp courses that I wish I had discovered earlier:"
                 }
             />
 

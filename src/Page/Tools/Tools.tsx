@@ -1,29 +1,29 @@
 import React from "react";
-import { Section } from "../../components/layouts/layout";
+import {Section} from "../../components/layouts/layout";
 
 import style from "./Tools.module.scss";
 import ToolsCard from "./ToolsCard";
 
 import {
-  AsepriteLogo,
-  BlenderLogo,
-  FigmaLogo,
-  GitLogo,
-  GraphqlLogo,
-  GsapLogo,
-  JavascriptLogo,
-  MongodbLogo,
-  MysqlLogo,
-  NextjsLogo,
-  NodejsLogo,
-  PostmanLogo,
-  ReactLogo,
-  ReduxLogo,
-  SassLogo,
-  TailwindCssLogo,
-  ThreejsLogo,
-  TypescriptLogo,
-  WebstormLogo,
+    AsepriteLogo,
+    BlenderLogo,
+    FigmaLogo,
+    GitLogo,
+    GraphqlLogo,
+    GsapLogo,
+    JavascriptLogo,
+    MongodbLogo,
+    MysqlLogo,
+    NextjsLogo,
+    NodejsLogo,
+    PostmanLogo,
+    ReactLogo,
+    ReduxLogo,
+    SassLogo,
+    TailwindCssLogo,
+    ThreejsLogo,
+    TypescriptLogo,
+    WebstormLogo,
 } from "../../assets";
 
 import Header from "../../components/header/header";
@@ -35,7 +35,7 @@ const Tools = () => {
       <Header
         header={"Tools"}
         description={
-          "The products, apps and services I use on a daily basis for study and coding."
+            "The following are the tools, products, apps, and services ,I use on a daily basis for my studies and coding."
         }
       />
 
