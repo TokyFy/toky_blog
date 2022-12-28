@@ -5,12 +5,27 @@
   padding: 2rem 1.4rem;
   font-weight: lighter;
   margin: 1rem 0;
+  border: 2px solid transparent;
+  transition: all .2s ease;
+
+  &:hover {
+    border: 2px solid #764adb;
+    border-radius: 2px;
+
+
+    .icon {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
 
   .icon {
-    width: 1.4rem;
+    width: 1rem;
     display: flex;
 
     img {
+      transition: all .2s ease;
       margin-top: auto;
       width: 100%;
       height: auto;

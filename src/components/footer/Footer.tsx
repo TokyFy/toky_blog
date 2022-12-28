@@ -2,7 +2,7 @@ import React, {forwardRef} from "react";
 import style from "./Footer.module.scss";
 import {Row} from "../layouts/layout";
 import LinkBox from "../LinkBox/LinkBox";
-import {About, GuestBook, Link, Project, Tools,} from "../../assets";
+import {About, Blog, GuestBook, Link, Project, Resource, Tools,} from "../../assets";
 
 const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
   return (
@@ -17,11 +17,11 @@ const Footer = forwardRef<HTMLDivElement, { up: boolean }>(({ up }, ref) => {
           <LinkBox image={Link} url={"/Link"}/>
           <LinkBox image={Project} url={"/Project"}/>
           <LinkBox image={Tools} url={"/Tools"}/>
-          {/*<LinkBox image={Resource} url={"/Resource"} />*/}
+          <LinkBox image={Resource} url={"/Resource"}/>
           <LinkBox image={GuestBook} url={"/GuestBook"}/>
           {/*<LinkBox image={Music} url={"/Music"} />*/}
           {/*<LinkBox image={Picture} url={"/Picture"} />*/}
-          {/*<LinkBox image={Blog} url={"/Blog"} />*/}
+          <LinkBox image={Blog} url={"/Blog"}/>
         </div>
       </Row>
     </footer>
