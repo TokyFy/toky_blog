@@ -20,21 +20,24 @@ const Resource = () => {
             <div className={style.websiteCollection}>
                 <Website title={"Interactive learning web platform"} founder={"Quincy Larson"}
                          url={"freecodecamp.org"}/>
-                <Website title={"Interactive learning web platform"} founder={"Quincy Larson"}
-                         url={"freecodecamp.org"}/>
-                <Website title={"Interactive learning web platform"} founder={"Quincy Larson"}
-                         url={"freecodecamp.org"}/>
+                <Website title={"Education for front-end developers"} founder={"Chris Coyier"}
+                         url={"css-tricks.com"}/>
+                <Website title={"Professional web design competition body"} founder={"Awwwards."}
+                         url={"www.awwwards.com"}/>
+                <Website title={"Learn From Anywhere"} founder={"Udemy, Inc."}
+                         url={"www.udemy.com"}/>
             </div>
 
             <HeaderSecond>Books collection :</HeaderSecond>
 
             <div className={style.bookCollection}>
-                <Website title={"Interactive learning web platform"} founder={"Quincy Larson"}
-                         url={"freecodecamp.org"}/>
-                <Website title={"Interactive learning web platform"} founder={"Quincy Larson"}
-                         url={"freecodecamp.org"}/>
-                <Website title={"Interactive learning web platform"} founder={"Quincy Larson"}
-                         url={"freecodecamp.org"}/>
+                <Website title={"Secrets of the JavaScript Ninja"}
+                         founder={"Bear Bibeault, John Resig, and Josip Maras"}
+                         url={"www.manning.com"}/>
+                <Website title={"Grokking Algorithms"} founder={"Aditya Bhargava"}
+                         url={"www.manning.com"}/>
+                <Website title={"Dive Into DESIGN PATTERNS"} founder={"Alexander Shvets"}
+                         url={"refactoring.guru"}/>
             </div>
         </Section>
     );

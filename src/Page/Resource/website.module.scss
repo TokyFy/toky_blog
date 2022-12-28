@@ -47,9 +47,10 @@
 
     .link {
       display: flex;
-      text-align: center;
+      text-align: right;
       flex-grow: 1;
       flex-direction: column-reverse;
+      margin-right: 1.5rem;
     }
   }
 }
